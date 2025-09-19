@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Recipe.html">
+</head>
+<style>
+    img {
+    width: 180px
+    height: 150px
+    border-top-left-radius:15px
+    border-top-right-radius: 15px
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+  }
+  .recipe {
+    display: grid;
+    width: 200px;
+    box-shadow: 0 3px 6px;
+    border-radius: 12px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    background-color: burlywood;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 15px black;
+    transition: transform 0.4s ease box-shadow 0.4s ease;
+  }
+  
+  .card:nth-child(1) { background-color: lightgreen; }
+  .card:nth-child(2) { background-color: blue; }
+  .card:nth-child(3) { background-color: lightcoral; }
+  .card:nth-child(4) { background-color: burlywood; }
+  .card:nth-child(5) { background-color: darkgray; }
+  .card:nth-child(6) { background-color: tan; }
+
+  .card:hover {
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+    transform: scale(0.95);
+  }
+
+    .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+    .card h2 {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+
+    .card ul {
+    padding-left: 20px;
+  }
+
+    .card ul li {
+    margin-bottom: 5px;
+  }
+</style>
+<body>
+  <div class="all">
+    <div class="recipe.html">
+      <h2>Rice & Chicken Curry</h2>
+      <img src="https://plus.unsplash.com/premium_photo-1695456065067-45cabcf25e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpY2tlbiUyMGN1cnJ5fGVufDB8fDB8fHww" alt="Chicken Curry">
+      <ul>
+        <li>Rice</li>
+        <li>Curry Paste</li>
+        <li>Chicken</li>
+        <li>Ginger</li>
+        <li>Garlic</li>
+        <li>Coriander</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="Card">
+    <h2>Greek Salad</h2>
+    <img src="https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZWslMjBzYWxhZHxlbnwwfHwwfHx8MA%3D%3" alt="Greek Salad">
+    <ul>
+      <li>Lettuce</li>
+      <li>Tomatoes</li>
+      <li>Cucumbers</li>
+      <li>Feta chesse</li>
+      <li>Mayonnaise</li>
+    </ul>
+  </div>
+
+  <div class="Card">
+    <h2>Avacado Toast</h2>
+    <img src="https://images.unsplash.com/photo-1652252036231-cf8f5f6ff23d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF2YWNhZG8lMjB0b2FzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Avacado Toast">
+    <ul>
+      <li>Bread</li>
+      <li>Avocado</li>
+      <li>Lemon</li>
+      <li>Salt</li>
+    </ul>
+  </div>
+
+  <div class="Card">
+    <h2>Pancakes</h2>
+    <img src="https://plus.unsplash.com/premium_photo-1672846027109-e2c91500afef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHD" alt="Pancakes">
+    <ul>
+      <li>Flour</li>
+      <li>Milk</li>
+      <li>Eggs</li>
+      <li>Maple Syrup</li>
+    </ul>
+  </div>
+
+  <div class="Card">
+    <h2>Fruit Smoothie</h2>
+    <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXQlMjBzbW9vdGhpZXxlbnwwfHwwfHx8MA%3D%3D" alt="Fruit Smoothie">
+    <ul>
+      <li>Banana</li>
+      <li>Berries</li>
+      <li>Yogurt</li>
+      <li>Honey</li>
+    </ul>
+  </div>
+</body>
+</html>

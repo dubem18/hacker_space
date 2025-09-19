@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Card Grid</title>
+  <link rel="stylesheet" href="Delicious menu.css">
+  <style>
+        header {
+      background-color: chocolate;
+        padding: 11px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        font-weight: lighter;
+        font-style: italic;
+        font: roboto;
+        margin: 20px;
+    }
+    header nav ul {
+      list-style: none;
+    }
+       .Card{
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px black;
+        transition: transform 0.3s ease;
+        background-color: lightgrey;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+ 
+    }
+    .recipe-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .Card:hover{
+        transform: scale(1.05);
+        box-shadow: 0, 0, 20px rgba(0, 0, 0, 0.4);
+    }
+    .Card img{
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .Card img {
+        background-color: darkkhaki;
+        padding: 7px;
+        margin: 10px;
+        text-align: center;
+    }
+
+     footer { 
+      font-display: 20px;
+      background-color: chocolate;
+     } 
+
+    .Card:hover .Order-now{
+        display: block;
+    }
+    .Order-now {
+
+        display: none;
+        background: #ff9800;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        transition: bottom 0.2s ease;
+        }
+
+        .container {
+          text-align: center;
+          font-size: 20px;
+        }
+
+        .container svg {
+          width: 50px;
+          height: 55px;
+          vertical-align: middle;
+          margin-left: 7px;
+
+        }
+        .size-6 {
+            width: 50px;
+            height: 45px;
+            vertical-align: middle;
+            background-color: lightblue;
+            vertical-align: middle;
+            margin-left: 15px;
+        }
+  </style>
+  <header>
+    <div class="container">
+      <h1 class="Favourite things">FAVOURITE THINGS</h1>
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+       <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+      </svg>
+    </div>
+   
+  </header>
+ <div class="recipe-grid">
+<div class="Card"> 
+    <h2>JOLLOF RICE</h2>
+    <img src="https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am9sbG9mJTIwcmljZXxlbnwwfHwwfHx8MA%3D%3D" alt="jollof rice">
+    <ul>
+        <li>dried thyme</li>
+        <li>red onion</li>
+        <li>bell pepper</li>
+        <li>water</li>
+        <li>garlic cloves</li>
+        <li>salt </li>
+    </ul>
+    <div class="Order-now">Order-now</div>
+ </div>
+ <div class="Card"> 
+    <h2>Fruit Smoothie</h2>
+    <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXQlMjBzbW9vdGhpZXxlbnwwfHwwfHx8MA%3D%3D" alt="Fruit Smoothie">
+    <ul>
+      <li>Banana</li>
+      <li>Berries</li>
+      <li>Yogurt</li>
+      <li>Honey</li>
+    </ul>
+    <div class="Order-now">Order-now</div>
+ </div>
+ <div class="Card"> 
+    <h2>Pancakes</h2>
+    <img src="https://plus.unsplash.com/premium_photo-1672846027109-e2c91500afef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHD" alt="Pancakes">
+    <ul>
+      <li>Flour</li>
+      <li>Milk</li>
+      <li>Eggs</li>
+      <li>Maple Syrup</li>
+    </ul>
+    <div class="Order-now">Order-now</div>
+</div>
+<div class="Card"> 
+    <h2>Avacado Toast</h2>
+    <img src="https://images.unsplash.com/photo-1652252036231-cf8f5f6ff23d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF2YWNhZG8lMjB0b2FzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Avacado Toast">
+    <ul>
+      <li>Bread</li>
+      <li>Avocado</li>
+      <li>Lemon</li>
+      <li>Salt</li>
+    </ul>
+    <div class="Order-now">Order-now</div>
+</div>
+<div class="Card"> 
+    <h2>Greek Salad</h2>
+    <img src="https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZWslMjBzYWxhZHxlbnwwfHwwfHx8MA%3D%3" alt="Greek Salad">
+    <ul>
+      <li>Lettuce</li>
+      <li>Tomatoes</li>
+      <li>Cucumbers</li>
+      <li>Feta chesse</li>
+      <li>Mayonnaise</li>
+    </ul>
+    <div class="Order-now">Order-now</div>
+</div>
+<div class="Card"> 
+      <h2>Rice & Chicken Curry</h2>
+      <img src="https://plus.unsplash.com/premium_photo-1695456065067-45cabcf25e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpY2tlbiUyMGN1cnJ5fGVufDB8fDB8fHww" alt="Chicken Curry">
+      <ul>
+        <li>Rice</li>
+        <li>Curry Paste</li>
+        <li>Chicken</li>
+        <li>Ginger</li>
+        <li>Garlic</li>
+        <li>Coriander</li>
+      </ul>
+      <div class="Order-now">Order-now</div>
+</div>
+<footer></footer>
+</html>
